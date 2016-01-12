@@ -9,7 +9,7 @@ class NavbarController {
   isCollapsed = true;
   //end-non-standard
 
-  constructor($anchorScroll,$location,$scope) {
+  constructor() {
     
   }
 
