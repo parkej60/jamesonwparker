@@ -1,4 +1,7 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+
+@import '../variables.scss';
 @import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../bower_components/font-awesome/scss/font-awesome';
@@ -14,9 +17,25 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
   padding: 0.2em 0;
 }
 
+
+.terminal-text {
+	
+	color:$beige;
+	font-family: "proxima-nova",sans-serif;
+    font-weight:100;
+}
+
+.no-padding {
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+}
+
 // Component styles are injected through grunt
 // injector
-@import 'main/main.scss';
+@import 'layout/footer/footer.scss';
+@import 'layout/header/header.scss';
+@import 'layout/main/main.scss';
 @import '../components/footer/footer.scss';
 @import '../components/modal/modal.scss';
+@import '../components/navbar/navbar.scss';
 // endinjector

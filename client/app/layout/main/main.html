@@ -1,0 +1,5 @@
+<div class="landing">
+  <div ng-repeat="section in vm.sections | filter:vm.selectedSection as results" class="animate-repeat">
+    <div ng-include src="section.template " id="slide-in-{{$index}}"></div>
+  </div>
+</div>

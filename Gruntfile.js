@@ -89,7 +89,7 @@ module.exports = function (grunt) {
         tasks: ['injector:sass']
       },
       sass: {
-        files: ['<%= yeoman.client %>/{app,components}/**/*.{scss,sass}'],
+        files: ['<%= yeoman.client %>/{app,components}/**/*.{scss,sass}','<%= yeoman.client %>/variables.scss'],
         tasks: ['sass', 'postcss']
       },
       gruntfile: {
@@ -378,6 +378,7 @@ module.exports = function (grunt) {
             'bower_components/**/*',
             'assets/images/{,*/}*.{webp}',
             'assets/fonts/**/*',
+            'assets/content/**/*',
             'index.html'
           ]
         }, {
@@ -413,7 +414,7 @@ module.exports = function (grunt) {
       },
       heroku: {
         options: {
-          remote: 'heroku',
+          remote: 'git@heroku.com:jamesonwparker.git',
           branch: 'master'
         }
       },

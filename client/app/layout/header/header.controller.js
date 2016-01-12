@@ -2,7 +2,7 @@
 
 (function() {
 
-class MainController {
+class HeaderController {
 
   constructor($http) {
     this.$http = $http;
@@ -15,6 +15,6 @@ class MainController {
 }
 
 angular.module('jamesonwparkerApp')
-  .controller('MainController', MainController);
+  .controller('HeaderController', HeaderController);
 
 })();
